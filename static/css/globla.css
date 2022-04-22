@@ -1,0 +1,55 @@
+/*
+Cores Padrões
+Color 1: #170B30
+Color 2: #C64FFF
+Color 3: #7B3FFF
+*/
+body{
+    margin:0;
+    padding:0;
+    background-color:#170B30;
+}
+header{
+    display:flex;
+    justify-content:center;
+    height: 100px;
+    margin-top: 25px;
+}
+.container{
+    display:flex;
+    justify-content:space-between;
+    width:990px;
+}
+.logo_header{
+    display:flex;
+    align-items:center;
+}
+.logo_header a img{
+    width: 300px;
+    height: 100px;
+}
+.menu_header{
+    display:flex;
+    align-items:center;
+}
+nav ul, nav li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul{
+    display: flex;
+}
+nav a{
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-family:Arial,sans-serif;
+    font-weight: 700;
+}
+nav .active a, 
+nav a:hover {
+    background-color:#C64FFF;
+}
