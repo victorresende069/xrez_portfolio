@@ -214,3 +214,31 @@ nav a:hover {
     width: 450px;
     height: 350px;
 }
+
+/*FOOTER*/
+footer{
+    height: 500px;
+    display:flex;
+    justify-content: center;
+}
+.footer_itens{
+    display:flex;
+    color: #FFFFFF;
+}
+.foot_item{
+    display: flex; 
+    flex:1;
+}
+.title_footer{
+    font-size: 27px;
+    color: #FFFFFF;
+    font-family: 'Roboto Mono', serif;
+    font-weight: bold;
+}
+.bar_footer{
+    width: 100px;
+    height: 3px;
+    background-color: #C64FFF;
+    margin-top: 10px;
+    border-radius: 1px 1px 1px 1px;
+}
