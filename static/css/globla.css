@@ -242,3 +242,19 @@ footer{
     margin-top: 10px;
     border-radius: 1px 1px 1px 1px;
 }
+
+footer .footer_copyright{
+    font-size: 15px;
+    color: #FFFFFF;
+    font-family: 'Roboto Mono', serif;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom:5px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+footer .footer_copyright a{
+    font-weight: 700;
+    text-decoration: none;
+    color: #C64FFF;
+}
