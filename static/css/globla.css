@@ -60,56 +60,51 @@ nav a:hover {
 
 .column{
     flex-direction: column;
+    justify-content: center;
 }
 
 
-/*BANNER SECTION*/
-#banner_section{
+/*HOME SECTION*/
+#home_section{
     display:flex;
     justify-content: center;
     background-image: linear-gradient(180deg, #c64fff 0%, #5f0a87 74%);
-    /*
-    background-image: url('../imgs/banner_section.webp');
-    background-position: center;
-    background-size: cover;
-    */
-    height: 700px;
+    height: 500px;
+}
 
+#home_section .home_container{
+    display: flex;
+    justify-content:center;
+    flex-direction: row-reverse;
+    margin-left: 25px;
+    margin-right: 25px;
 }
-.section_banner_headline{
-    flex:1;
+.home_img{
     display:flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content:center;
+    flex-direction:column;
 }
-.section_banner_headline h1{
+.home_desc{
+    display: flex;
+    justify-content:center;
+    flex-direction:column;
+}
+
+#home_section .home_img img{
+    width: 450px;
+    height: 350PX;
+}
+.home_desc h1{
     color: white;
     font-family: 'Roboto Mono', serif;
-    font-size: 70px;
-    /*
-    text-shadow: 1px 1px 0px #000000;
-    */
-    margin:0;
-    padding: 0;
-    width: 700px;
+    font-size: 50px;
 }
-.section_banner_headline h2{
-    color: white;
-    font-size: 25px;
+.home_desc h2{
     font-family: 'Roboto Mono', serif;
-    /*
-    text-shadow: 1px 1px 0px #5c5c5c;
-    */
-    margin:0;
-    padding: 0;
-    width: 700px;
-    margin-top: 15px;
+    color: white;
+    font-size: 18px;
 }
-.section_banner_options{
-    height: 210px;
-    margin:0;
-    padding: 0;
-}
+
 
 
 /*SECTION project*/
@@ -175,7 +170,7 @@ nav a:hover {
     display:flex;
     justify-content:center;
     margin-top: 25px;
-    margin-bottom: 250px;
+    margin-bottom: 100px;
     justify-content: space-around;
     align-items: center;
 }
@@ -191,9 +186,7 @@ nav a:hover {
     width: 450px;
     height: 350px;
 }
-.office_marketing_desc{
-    margin-left: 55px;
-}
+
 .off_mar_title{
     font-size: 25px !important;
 }
@@ -217,10 +210,10 @@ nav a:hover {
 
 /*FOOTER*/
 footer{
-    height: 500px;
     display:flex;
     justify-content: center;
 }
+
 .footer_itens{
     display:flex;
     color: #FFFFFF;
@@ -228,6 +221,9 @@ footer{
 .foot_item{
     display: flex; 
     flex:1;
+    width: 210px;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 .title_footer{
     font-size: 27px;
@@ -244,7 +240,8 @@ footer{
 }
 
 footer .footer_copyright{
-    font-size: 15px;
+    margin-top: 50px;
+    font-size: 12px;
     color: #FFFFFF;
     font-family: 'Roboto Mono', serif;
     font-weight: 400;
@@ -257,4 +254,80 @@ footer .footer_copyright a{
     font-weight: 700;
     text-decoration: none;
     color: #C64FFF;
+}
+
+/*FOOTER CONTACT*/
+.contact{
+    display:flex;  
+    justify-content:center;
+}
+.info_contact{
+    margin-top: 25px;
+    display:flex;  
+    flex-direction: row;
+   /*justify-content:center;*/
+}
+.info_contact .icon{
+    display: flex;
+    justify-content:center;
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+}
+.info_contact .icon img{
+    width: 25px;
+    height: 25px;
+}
+.info_contact .info_desc{
+    font-family: 'Roboto Mono', serif;
+    font-size: 12px;
+    font-weight: bold;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/*FOOTER SOCIAL*/
+.footer_body .social{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.social .facebook, .instagram, .whatsapp{
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.facebook{
+    margin-top: 25px;
+    background-image: url('../imgs/social/facebook.png');
+    background-position: center;
+    background-size: cover
+}
+.instagram{
+    margin-top: 25px;
+    background-image: url('../imgs/social/instagram.png');
+    background-position: center;
+    background-size: cover
+}
+.whatsapp{
+    margin-top: 25px;
+    background-image: url('../imgs/social/whatsapp.png');
+    background-position: center;
+    background-size: cover
+}
+/*FOOTER SOLUÇÕES*/
+.soluctions{
+    margin-top: 25px;
+    display:flex;
+    flex-direction: column;
+    font-family: 'Roboto Mono', serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+.soluctions .info_so{
+    margin-top: 10px;
+
 }
